@@ -28,7 +28,6 @@ userSchema.pre('save', async function (next) {
   }
 
   this.password = bcrypt.hashSync(this.password)
-
   return next()
 })
 
